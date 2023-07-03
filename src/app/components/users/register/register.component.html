@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row justify-content-center d-flex mt-5">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+                        <div class="mb-3">
+                            <label>Nombre de Usuario:</label>
+                            <input type="text" class="form-control" formControlName="username" required="">
+                        </div>
+                        <div class="mb-3">
+                            <label>Email:</label>
+                            <input type="email" class="form-control" formControlName="email" required="">
+                        </div>
+                        <div class="mb-3">
+                            <label>Contraseña:</label>
+                            <input type="password" class="form-control" formControlName="password" required="">
+                        </div>
+                        <input type="submit" class="btn btn-primary float-0" value="Registrar">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

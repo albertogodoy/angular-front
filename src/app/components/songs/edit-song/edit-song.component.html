@@ -1,0 +1,40 @@
+<div class="row">
+    <div class="col-12">
+        <button class="btn btn-secondary mb-3" routerLink="/songs">Regresar</button>
+        <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+            <div class="mb-3">
+                <label class="form-label">Titulo</label>
+                <input type="text" class="form-control" formControlName="title">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Artista</label>
+                <input type="text" class="form-control" formControlName="artist">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Genero</label>
+                <input type="text" class="form-control" formControlName="genero">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Album</label>
+                <input type="text" class="form-control" formControlName="album">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Duracion</label>
+                <input type="text" class="form-control" formControlName="duration">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Año</label>
+                <input type="number" class="form-control" formControlName="year">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Tracknumber</label>
+                <input type="number" class="form-control" formControlName="tracknumber">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Es Explicita</label>
+                <input type="checkbox" class="form-check" formControlName="isExplicit">
+            </div>
+            <input type="submit" value="enviar" class="btn btn-info">
+        </form>
+    </div>
+</div>

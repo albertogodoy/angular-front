@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <div class="card mt-5">
+            <div class="card-header">
+                <div class="card-title">Detalles de la musica seleccionada</div>
+            </div>
+            <div class="card-body">
+                <br>
+                <h3>Titulo: {{ song().title }}</h3>
+                <br>
+                <h3>Album: {{ song().album }}</h3>
+                <br>
+                <h3>Año: {{ song().year }}</h3>
+                <br>
+                <h3>Artista: {{ song().artist }}</h3>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-primary" routerLink="/songs">Regresar</button>
+            </div>
+        </div>
+    </div>
+</div>
